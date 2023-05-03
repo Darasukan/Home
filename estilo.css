@@ -28,6 +28,24 @@ hr
     width: 50%;
 }
 
+div::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    border-radius: 10px;
+}
+div
+{
+    background-clip:content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 #linkDiv
 {
     transform: translate(-50%, -50%);
@@ -47,12 +65,12 @@ hr
 }
 
 a{
-    color:dodgerblue;
+    color:white;
     text-decoration: none;
 }
 
 a:visited{
-    color:#007fff;
+    color:dodgerblue;
     text-decoration: none;
 }
 
@@ -61,7 +79,8 @@ a:hover{
     text-decoration: none;
 }
 
-img{
-    width: 150px; 
-    height: 150px; 
-    border-radius: 10px;}
+img{ 
+    border-radius: 10px;
+    background-size:cover;
+    height: 150px;
+    }
