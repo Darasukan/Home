@@ -35,6 +35,7 @@ hr
     height: 150px;
     border: 1px solid white;
     border-radius: 10px;
+    
 }
 #center
 {
@@ -59,3 +60,8 @@ a:hover{
     color:white;
     text-decoration: none;
 }
+
+img{
+    width: 150px; 
+    height: 150px; 
+    border-radius: 10px;}
